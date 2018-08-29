@@ -1,11 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import Header from '../components/header';
 import Footer from '../components/footer';
-import { Container } from 'reactstrap';
 
-import './scss/main.scss';
+import '../assets/scss/main.scss';
+
 const DefaultLayout = ({ children }) => (
     <div>
         <Helmet
@@ -15,28 +13,15 @@ const DefaultLayout = ({ children }) => (
                 { name: 'keywords', content: 'Home description' },
             ]}
         />
+        {/* CSS Grid */}
         <div className="grid-container">
-            <div className="grid-header">
-                <Header />
-            </div>
-
-            <div className="grid-main">
-                <main>
-                    <Container>{children()}</Container>
-                </main>
-            </div>
+            <main className="grid-main">{children()}</main>
 
             <div className="grid-footer">
-                <Container>
-                    <Footer />
-                </Container>
+                <Footer />
             </div>
         </div>
     </div>
 );
-
-DefaultLayout.propTypes = {
-    children: PropTypes.func,
-};
 
 export default DefaultLayout;

@@ -1,0 +1,23 @@
+.grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 0 0;
+    grid-template-areas: 'grid-main' 'grid-footer';
+}
+
+.grid-main {
+    grid-area: grid-main;
+}
+
+.grid-footer {
+    grid-area: grid-footer;
+    color: #fff;
+    background-color: #2687f6;
+}
+
+.logo {
+    height: 2.25rem;
+    width: auto;
+}

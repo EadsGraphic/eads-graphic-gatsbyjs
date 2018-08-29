@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
+import logo from '../assets/images/eg-logo.svg';
+
 import {
     Collapse,
     Navbar,
@@ -32,8 +34,14 @@ class Header extends React.Component {
     render() {
         return (
             <div>
-                <Navbar light color="white" expand="sm">
-                    <NavbarBrand href="/">EadsGraphic</NavbarBrand>
+                <Navbar expand="sm">
+                    <NavbarBrand href="/">
+                        <img
+                            src={logo}
+                            alt={'EadsGraphic Logo'}
+                            className="logo"
+                        />
+                    </NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
