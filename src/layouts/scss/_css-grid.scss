@@ -1,0 +1,20 @@
+.grid-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 64px auto auto;
+  grid-gap: 0 0;
+  grid-template-areas: 'grid-header' 'grid-main' 'grid-footer';
+}
+
+.grid-header {
+  grid-area: grid-header;
+}
+
+.grid-main {
+  grid-area: grid-main;
+}
+
+.grid-footer {
+  grid-area: grid-footer;
+}
