@@ -8,7 +8,7 @@ class Footer extends React.Component {
             <footer className="p-5">
                 <Container>
                     <Row>
-                        <Col className="col-12 col-sm-3">
+                        <Col className="col-12 col-sm-4">
                             {/* Mission Statement */}
                             <p>
                                 EadsGraphic strives to deliver one of a kind
@@ -18,7 +18,7 @@ class Footer extends React.Component {
                                 desing to web development.
                             </p>
                         </Col>
-                        <Col className="col-6 col-sm-3">
+                        <Col className="col-6 col-sm-2">
                             <h4 className="mb-3">Services</h4>
 
                             <ul className="list-unstyled">
@@ -40,7 +40,7 @@ class Footer extends React.Component {
                             </ul>
                         </Col>
 
-                        <Col className="col-6 col-sm-3">
+                        <Col className="col-6 col-sm-2">
                             <h4 className="mb-3">Our Site</h4>
 
                             <ul className="list-unstyled">
@@ -61,7 +61,7 @@ class Footer extends React.Component {
                                 </li>
                             </ul>
                         </Col>
-                        <Col className="col-12 col-sm-3">
+                        <Col className="col-12 col-sm-4 text-center">
                             <h4>Get Social</h4>
                         </Col>
                     </Row>

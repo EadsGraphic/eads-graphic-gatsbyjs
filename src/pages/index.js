@@ -11,12 +11,9 @@ const IndexPage = () => (
             <Header />
             <Container>
                 <Row>
-                    <Col className="col-sm-4">
+                    <Col className="col-sm-6">
                         <h3>The perfect 50/50 split</h3>
-                        <h1>
-                            Designers &amp; <br />
-                            Web Developers
-                        </h1>
+                        <h1>Designers &amp; Web Developers</h1>
                         <div>
                             <Button outline color="primary">
                                 Let's Talk
@@ -24,7 +21,7 @@ const IndexPage = () => (
                             <Button color="link">More About Us</Button>
                         </div>
                     </Col>
-                    <Col className="col-sm-8 text-center">
+                    <Col className="col-sm-6 text-center">
                         <p>Hero image goes Here</p>
                     </Col>
                 </Row>
@@ -95,9 +92,8 @@ const IndexPage = () => (
                 <Col className="col-12 text-center">
                     <h2>Our Services</h2>
                     <h5 className="section-description m-auto">
-                        Our team of creative professionals have a wealth of
-                        design knowledge and technical skills that we are able
-                        to pass on to our clients
+                        Our team has a wealth of design and development skills
+                        that we can share with our clients
                     </h5>
                 </Col>
             </Row>

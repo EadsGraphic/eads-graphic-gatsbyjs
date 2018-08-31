@@ -7,7 +7,20 @@
 }
 
 .section-description {
-    color: #8d96a7;
+    text-align: center;
+    color: $sm-title-color;
+    margin: -1.5rem auto 3rem;
     max-width: 48rem;
-    font-size: 1rem;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+    .hero-wrapper {
+        height: 100vh;
+        position: relative;
+        background-size: 85%;
+        background-image: url('../images/hero-image.svg');
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
 }
