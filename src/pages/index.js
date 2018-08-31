@@ -1,13 +1,34 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import CallToAction from '../components/call-to-action';
 import Header from '../components/header';
+import Services from '../components/services';
 import { Container, Row, Col, Button } from 'reactstrap';
 
 const IndexPage = () => (
     <div>
-        <Header />
+        {/* Custom Hero Section */}
         <section className="hero-wrapper mb-5">
-            <p>Hero wrapper stuff goes in here</p>
+            <Header />
+            <Container>
+                <Row>
+                    <Col className="col-sm-4">
+                        <h3>The perfect 50/50 split</h3>
+                        <h1>
+                            Designers &amp; <br />
+                            Web Developers
+                        </h1>
+                        <div>
+                            <Button outline color="primary">
+                                Let's Talk
+                            </Button>
+                            <Button color="link">More About Us</Button>
+                        </div>
+                    </Col>
+                    <Col className="col-sm-8 text-center">
+                        <p>Hero image goes Here</p>
+                    </Col>
+                </Row>
+            </Container>
         </section>
         <Container>
             <Row>
@@ -73,13 +94,15 @@ const IndexPage = () => (
             <Row className="mt-5">
                 <Col className="col-12 text-center">
                     <h2>Our Services</h2>
-                    <h5>
+                    <h5 className="section-description m-auto">
                         Our team of creative professionals have a wealth of
                         design knowledge and technical skills that we are able
                         to pass on to our clients
                     </h5>
                 </Col>
             </Row>
+            <Services />
+            <CallToAction />
         </Container>
     </div>
 );

@@ -1,10 +1,16 @@
 import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
 
 const PortfolioPage = () => (
-    <div>
-        <h1>Portfolio</h1>
-        <p>Check out all of our work</p>
-    </div>
+    <section>
+        <Container>
+            <Row>
+                <Col>
+                    <h1>Portfolio</h1>
+                </Col>
+            </Row>
+        </Container>
+    </section>
 );
 
 export default PortfolioPage;

@@ -18,7 +18,7 @@ import {
     DropdownItem,
 } from 'reactstrap';
 
-class Header extends React.Component {
+class HeaderAlt extends React.Component {
     constructor(props) {
         super(props);
 
@@ -35,7 +35,7 @@ class Header extends React.Component {
     render() {
         return (
             <Container>
-                <Navbar expand="sm">
+                <Navbar className="navbar-alt" light white expand="sm">
                     <NavbarBrand href="/">
                         <img
                             src={logo}
@@ -85,4 +85,4 @@ class Header extends React.Component {
     }
 }
 
-export default Header;
+export default HeaderAlt;

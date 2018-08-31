@@ -1,11 +1,16 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Container, Row, Col } from 'reactstrap';
 
 const ContactPage = () => (
-    <div>
-        <h1>Contact</h1>
-        <p>Welcome to page 2</p>
-    </div>
+    <section>
+        <Container>
+            <Row>
+                <Col>
+                    <h1>Contact</h1>
+                </Col>
+            </Row>
+        </Container>
+    </section>
 );
 
 export default ContactPage;

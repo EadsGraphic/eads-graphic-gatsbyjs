@@ -1,11 +1,16 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Container, Row, Col } from 'reactstrap';
 
 const ServicesPage = () => (
-    <div>
-        <h1>Services</h1>
-        <p>Welcome to page 2</p>
-    </div>
+    <section>
+        <Container>
+            <Row>
+                <Col>
+                    <h1>Services</h1>
+                </Col>
+            </Row>
+        </Container>
+    </section>
 );
 
 export default ServicesPage;

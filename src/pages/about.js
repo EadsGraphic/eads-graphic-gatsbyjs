@@ -1,9 +1,12 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Container, Row, Col } from 'reactstrap';
 import Helmet from 'react-helmet';
+import HeaderAlt from '../components/headeralt';
+import CodeResumeImage from '../assets/images/code-resume.png';
 
 const AboutPage = () => (
-    <div>
+    <section>
+        {/* SEO MetaData */}
         <Helmet
             title={`EadsGraphic | About Us`}
             meta={[
@@ -12,9 +15,22 @@ const AboutPage = () => (
             ]}
         />
 
-        <h1>About</h1>
-        <p>Welcome to page 2</p>
-    </div>
+        <HeaderAlt />
+        <Container>
+            <Row>
+                <Col className="col-6">
+                    <h1>About</h1>
+                </Col>
+                <Col className="col-12 text-center">
+                    <img
+                        className="img-fluid code-resume"
+                        src={CodeResumeImage}
+                        alt="EadsGraphic resume"
+                    />
+                </Col>
+            </Row>
+        </Container>
+    </section>
 );
 
 export default AboutPage;

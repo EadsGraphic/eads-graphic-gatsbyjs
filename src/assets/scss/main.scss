@@ -2,5 +2,11 @@
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 
 // Begin Custom Styling *** Order of Importance Matter"
+@import 'variables.scss';
+@import 'base.scss';
+@import 'navbar.scss';
+@import 'typography.scss';
+@import 'buttons.scss';
 @import 'css-grid.scss';
 @import 'hero-image.scss';
+@import 'footer.scss';

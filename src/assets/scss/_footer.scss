@@ -1,0 +1,36 @@
+footer {
+    background-color: $footer-bg;
+    color: $sm-title-color;
+
+    h4 {
+        font-size: 0.875rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        letter-spacing: 0.025em;
+        margin: 0 0 5px;
+        color: $sm-title-color;
+    }
+
+    li {
+        padding: 0.25rem 0;
+    }
+
+    a {
+        font-size: 0.875rem;
+        color: $sm-title-color;
+        transition: color 0.1s;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: $font-color;
+    }
+}
+
+.copyright,
+.copyright a {
+    font-size: 0.75rem;
+    font-weight: 100;
+    letter-spacing: 0.025em;
+    color: $sm-title-color;
+}
