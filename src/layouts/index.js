@@ -4,6 +4,8 @@ import Footer from '../components/footer';
 
 import '../assets/scss/main.scss';
 
+import favicon from '../assets/images/favicon.png';
+
 const DefaultLayout = ({ children }) => (
     <div>
         <Helmet
@@ -12,7 +14,13 @@ const DefaultLayout = ({ children }) => (
                 { name: 'description', content: 'Home Sample' },
                 { name: 'keywords', content: 'Home description' },
             ]}
-        />
+        >
+            <link rel="favicon" type="image/png" href={favicon} />
+            <link
+                rel="preload"
+                href="https://fonts.googleapis.com/css?family=Open+Sans:400,600"
+            />
+        </Helmet>
         {/* CSS Grid */}
         <div className="grid-container">
             <main className="grid-main">{children()}</main>
