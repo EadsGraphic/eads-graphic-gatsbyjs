@@ -86,9 +86,10 @@ class Services extends React.Component {
                     <div className="service-description">
                         <h3 className="mb-3">UI/UX Design</h3>
                         <p>
-                            Bring your next digital project to life by taking
-                            advantage of our in house UI/UX designers who will
-                            connect audiences to applications.
+                            Levarage our in house UI/UX designers skills and
+                            expertise to bring your next application to life.
+                            Utilizing design best practices, we can ensure your
+                            application will be user friendly.
                         </p>
                     </div>
                 </div>

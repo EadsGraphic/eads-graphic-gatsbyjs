@@ -36,10 +36,10 @@ const IndexPage = () => (
                         <span>and developers</span>
                     </h2>
                     <p>
-                        Stop wasting time looking for designers and web
-                        developers. Our team is comprised of creative
-                        professionals who can do both, so rest assured your next
-                        idea can be brought to life.
+                        Stop looking for a designer and a web developer. Why not
+                        get 2 for the price of 1? Our team is comprised of
+                        creative professionals who can do both, so rest assured
+                        your next idea can be brought to life.
                     </p>
                     <Button color="primary">The Services</Button>
                 </Col>
@@ -98,8 +98,8 @@ const IndexPage = () => (
                 </Col>
             </Row>
             <Services />
-            <CallToAction />
         </Container>
+        <CallToAction />
     </div>
 );
 

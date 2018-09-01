@@ -23,19 +23,19 @@ class Footer extends React.Component {
 
                             <ul className="list-unstyled">
                                 <li>
-                                    <Link>Service</Link>
+                                    <Link to="/services">Service</Link>
                                 </li>
                                 <li>
-                                    <Link>Service</Link>
+                                    <Link to="/services">Service</Link>
                                 </li>
                                 <li>
-                                    <Link>Service</Link>
+                                    <Link to="/services">Service</Link>
                                 </li>
                                 <li>
-                                    <Link>Service</Link>
+                                    <Link to="/services">Service</Link>
                                 </li>
                                 <li>
-                                    <Link>Service</Link>
+                                    <Link to="/services">Service</Link>
                                 </li>
                             </ul>
                         </Col>

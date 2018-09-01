@@ -1,0 +1,43 @@
+#call-to-action {
+    color: $brand-secondary;
+    // background-image: linear-gradient($white, $footer-bg);
+}
+
+.cta-h2 {
+    color: $brand-primary;
+    margin-bottom: 0;
+}
+
+footer {
+    position: relative;
+}
+
+footer:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -90px;
+    bottom: 0;
+    height: 14rem;
+    background: $footer-bg;
+    transform: skew(0, -8deg);
+    z-index: -1;
+}
+
+footer:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -90px;
+    bottom: 0;
+    height: 14rem;
+    background: $brand-primary;
+    transform: skew(0, 8deg);
+    z-index: -2;
+}
+
+.pb-12 {
+    padding-bottom: 12rem;
+}

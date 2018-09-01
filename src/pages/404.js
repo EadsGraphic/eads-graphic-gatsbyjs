@@ -1,17 +1,29 @@
 import React from 'react';
+import Helmet from 'react-helmet';
+import HeaderAlt from '../components/headeralt';
 import { Container, Row, Col } from 'reactstrap';
 
 const NotFoundPage = () => (
-    <section>
-        <Container>
+    <Container>
+        <section>
+            {/* SEO MetaData */}
+            <Helmet
+                title={`EadsGraphic | 404`}
+                meta={[
+                    { name: 'description', content: 'About Sample' },
+                    { name: 'keywords', content: 'About description' },
+                ]}
+            />
+
+            <HeaderAlt />
+
             <Row>
-                <Col>
-                    <h1>404 Not Found</h1>
-                    <p>Sorry, the page you are looking for does not exist.</p>
+                <Col className="col-6">
+                    <h1>404</h1>
                 </Col>
             </Row>
-        </Container>
-    </section>
+        </section>
+    </Container>
 );
 
 export default NotFoundPage;

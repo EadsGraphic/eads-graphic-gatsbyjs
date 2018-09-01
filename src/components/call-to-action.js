@@ -4,17 +4,12 @@ import { Row, Col, Button } from 'reactstrap';
 class CallToAction extends React.Component {
     render() {
         return (
-            <section id="call-to-action p-5">
+            <section id="call-to-action" className="pb-12">
                 <Row className="text-center">
                     <Col>
-                        <h2>Let’s Start Your Next Project</h2>
-                        <h3>
-                            We love hearing new ideas, so let's set up some time
-                            to talk.
-                        </h3>
-                        <Button className="mt-4" color="outline-primary">
-                            Contact Us
-                        </Button>
+                        <h2 className="cta-h2">Your Idea, Our Job</h2>
+                        <p>We love hearing ideas, let's set up time to talk.</p>
+                        <Button color="primary">Contact Us</Button>
                     </Col>
                 </Row>
             </section>

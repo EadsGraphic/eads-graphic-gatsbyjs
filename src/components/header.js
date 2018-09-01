@@ -47,34 +47,37 @@ class Header extends React.Component {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink>
-                                    <Link to="/about">About</Link>
-                                </NavLink>
+                                <Link className="nav-link" to="/about">
+                                    About
+                                </Link>
                             </NavItem>
                             <NavItem>
-                                <NavLink>
-                                    <Link to="/services">Services</Link>
-                                </NavLink>
+                                <Link className="nav-link" to="/services">
+                                    Services
+                                </Link>
                             </NavItem>
                             <NavItem>
-                                <NavLink>
-                                    <Link to="/portfolio">Portfolio</Link>
-                                </NavLink>
+                                <Link className="nav-link" to="/portfolio">
+                                    Portfolio
+                                </Link>
                             </NavItem>
                             <NavItem>
-                                <NavLink>
-                                    <Link to="/contact">Contact</Link>
-                                </NavLink>
+                                <Link className="nav-link" to="/contact">
+                                    Contact
+                                </Link>
                             </NavItem>
                             <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle nav caret>
-                                    Options
+                                    Social
                                 </DropdownToggle>
                                 <DropdownMenu right>
-                                    <DropdownItem>Option 1</DropdownItem>
-                                    <DropdownItem>Option 2</DropdownItem>
+                                    <DropdownItem>Instagram</DropdownItem>
+                                    <DropdownItem>Dribbble</DropdownItem>
+                                    <DropdownItem>LinkedIn</DropdownItem>
+                                    <DropdownItem>Facebook</DropdownItem>
+                                    <DropdownItem>YouTube</DropdownItem>
                                     <DropdownItem divider />
-                                    <DropdownItem>Reset</DropdownItem>
+                                    <DropdownItem>Email</DropdownItem>
                                 </DropdownMenu>
                             </UncontrolledDropdown>
                         </Nav>

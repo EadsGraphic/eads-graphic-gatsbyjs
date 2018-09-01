@@ -17,7 +17,7 @@ const DefaultLayout = ({ children }) => (
         <div className="grid-container">
             <main className="grid-main">{children()}</main>
 
-            <div className="grid-footer mt-5">
+            <div className="grid-footer">
                 <Footer />
             </div>
         </div>

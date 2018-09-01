@@ -5,18 +5,19 @@ import HeaderAlt from '../components/headeralt';
 import CodeResumeImage from '../assets/images/code-resume.png';
 
 const AboutPage = () => (
-    <section>
-        {/* SEO MetaData */}
-        <Helmet
-            title={`EadsGraphic | About Us`}
-            meta={[
-                { name: 'description', content: 'About Sample' },
-                { name: 'keywords', content: 'About description' },
-            ]}
-        />
+    <Container>
+        <section>
+            {/* SEO MetaData */}
+            <Helmet
+                title={`EadsGraphic | About Us`}
+                meta={[
+                    { name: 'description', content: 'About Sample' },
+                    { name: 'keywords', content: 'About description' },
+                ]}
+            />
 
-        <HeaderAlt />
-        <Container>
+            <HeaderAlt />
+
             <Row>
                 <Col className="col-6">
                     <h1>About</h1>
@@ -29,8 +30,8 @@ const AboutPage = () => (
                     />
                 </Col>
             </Row>
-        </Container>
-    </section>
+        </section>
+    </Container>
 );
 
 export default AboutPage;
