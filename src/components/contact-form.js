@@ -7,7 +7,7 @@ class ContactForm extends React.Component {
             <section id="call-to-action" className="pb-12">
                 <Row>
                     <Col className="col-10 col-sm-10 col-md-8 mx-auto">
-                        <Form name="contact" method="POST" netlify>
+                        <form name="contact" method="POST" netlify>
                             <FormGroup>
                                 <Label for="name">Name</Label>
                                 <Input
@@ -48,7 +48,7 @@ class ContactForm extends React.Component {
                             </FormGroup>
 
                             <Button type="submit">Submit</Button>
-                        </Form>
+                        </form>
                     </Col>
                 </Row>
             </section>
