@@ -2,27 +2,48 @@ import React from 'react';
 import CallToAction from '../components/call-to-action';
 import Header from '../components/header';
 import Services from '../components/services';
+import Typed from 'react-typed';
 import { Container, Row, Col, Button } from 'reactstrap';
 
 const IndexPage = () => (
     <div>
         {/* Custom Hero Section */}
-        <section className="hero-wrapper mb-5">
+        <section className="hero mb-5">
             <Header />
             <Container>
                 <Row>
-                    <Col className="col-sm-6">
+                    <Col className="col-12 col-sm-8 text-center mx-auto">
                         <h3>The perfect 50/50 split</h3>
-                        <h1>Designers &amp; Web Developers</h1>
-                        <div>
-                            <Button outline color="primary">
+
+                        <h1>Hi we are a team of</h1>
+                        <h2>
+                            <Typed
+                                strings={[
+                                    'Designers',
+                                    'Developers',
+                                    'Analysts',
+                                ]}
+                                loop={true}
+                                loopCount={5}
+                                typeSpeed={40}
+                            />
+                        </h2>
+
+                        <div className="hero">
+                            <Button
+                                className="hero_button--primary mr-3"
+                                color="primary"
+                            >
                                 Let's Talk
                             </Button>
-                            <Button color="link">More About Us</Button>
+                            <Button
+                                className="hero_button-link--primary"
+                                outline
+                                color="primary"
+                            >
+                                More About Us
+                            </Button>
                         </div>
-                    </Col>
-                    <Col className="col-sm-6 text-center">
-                        <p>Hero image goes Here</p>
                     </Col>
                 </Row>
             </Container>

@@ -1,9 +1,16 @@
-.hero-wrapper {
+.hero {
+    min-height: 100vh;
     height: 100vh;
     position: relative;
-    background-image: url('../images/hero-image.svg');
-    background-repeat: no-repeat;
-    background-position: top right;
+    background-image: radial-gradient(
+        circle,
+        #d7d7d7,
+        #d7d7d7 1px,
+        #fff 1px,
+        #fff
+    );
+    background-size: 28px 28px;
+    border-bottom: 1px solid #d7d7d7;
 }
 
 .section-description {
@@ -12,6 +19,13 @@
     margin: -1.5rem auto 3rem;
     max-width: 48rem;
     font-size: 0.875rem;
+}
+.hero_button--primary {
+    box-shadow: 0 4px 14px 0 rgba(0, 118, 255, 0.39);
+}
+
+.hero-title {
+    font-size: 3.5rem;
 }
 
 // Extra small devices (portrait phones, less than 576px)

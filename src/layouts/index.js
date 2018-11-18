@@ -17,7 +17,8 @@ const DefaultLayout = ({ children }) => (
         >
             <link rel="favicon" type="image/png" href={favicon} />
             <link
-                rel="preload"
+                rel="prefetch"
+                as="font"
                 href="https://fonts.googleapis.com/css?family=Open+Sans:400,600"
             />
         </Helmet>

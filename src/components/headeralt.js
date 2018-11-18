@@ -11,7 +11,6 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
@@ -35,7 +34,7 @@ class HeaderAlt extends React.Component {
     render() {
         return (
             <Container>
-                <Navbar className="navbar-alt" light white expand="sm">
+                <Navbar className="navbar-alt" light white="true" expand="sm">
                     <NavbarBrand href="/">
                         <img
                             src={logo}
@@ -47,24 +46,24 @@ class HeaderAlt extends React.Component {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink>
-                                    <Link to="/about">About</Link>
-                                </NavLink>
+                                <Link className="nav-link" to="/about">
+                                    About
+                                </Link>
                             </NavItem>
                             <NavItem>
-                                <NavLink>
-                                    <Link to="/services">Services</Link>
-                                </NavLink>
+                                <Link className="nav-link" to="/services">
+                                    Services
+                                </Link>
                             </NavItem>
                             <NavItem>
-                                <NavLink>
-                                    <Link to="/portfolio">Portfolio</Link>
-                                </NavLink>
+                                <Link className="nav-link" to="/portfolio">
+                                    Portfolio
+                                </Link>
                             </NavItem>
                             <NavItem>
-                                <NavLink>
-                                    <Link to="/contact">Contact</Link>
-                                </NavLink>
+                                <Link className="nav-link" to="/contact">
+                                    Contact
+                                </Link>
                             </NavItem>
                             <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle nav caret>

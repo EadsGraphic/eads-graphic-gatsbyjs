@@ -40,8 +40,8 @@ class ContactForm extends React.Component {
         return (
             <section id="call-to-action" className="pb-12">
                 <Row>
-                    <Col className="col-10 col-sm-10 col-md-8 mx-auto">
-                        <form
+                    <Col className="col-12 col-sm-8 mx-auto">
+                        <Form
                             name="contact"
                             method="post"
                             action="/thanks/"
@@ -50,56 +50,50 @@ class ContactForm extends React.Component {
                             onSubmit={this.handleSubmit}
                         >
                             {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-                            <input
+                            <Input
                                 type="hidden"
                                 name="form-name"
                                 value="contact"
                             />
                             <p hidden>
-                                <label>
+                                <Label>
                                     Don’t fill this out:{' '}
-                                    <input
+                                    <Input
                                         name="bot-field"
                                         onChange={this.handleChange}
                                     />
-                                </label>
+                                </Label>
                             </p>
-                            <p>
-                                <label>
-                                    Your name:
-                                    <br />
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        onChange={this.handleChange}
-                                    />
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                    Your email:
-                                    <br />
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        onChange={this.handleChange}
-                                    />
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                    Message:
-                                    <br />
-                                    <textarea
-                                        name="message"
-                                        onChange={this.handleChange}
-                                    />
-                                </label>
-                            </p>
-                            <p>
-                                <button type="submit">Send</button>
-                            </p>
-                        </form>
+
+                            <FormGroup>
+                                <Label>Your name:</Label>
+                                <Input
+                                    type="text"
+                                    name="name"
+                                    onChange={this.handleChange}
+                                />
+                            </FormGroup>
+                            <FormGroup>
+                                <Label>Your email:</Label>
+                                <Input
+                                    type="email"
+                                    name="email"
+                                    onChange={this.handleChange}
+                                />
+                            </FormGroup>
+
+                            <FormGroup>
+                                <Label>Message:</Label>
+                                <Input
+                                    type="textarea"
+                                    name="message"
+                                    onChange={this.handleChange}
+                                />
+                            </FormGroup>
+                            <FormGroup>
+                                <Button type="submit">Send</Button>
+                            </FormGroup>
+                        </Form>
                     </Col>
                 </Row>
             </section>
