@@ -4,50 +4,70 @@ import Header from '../components/header';
 import Services from '../components/services';
 import Typed from 'react-typed';
 import { Container, Row, Col, Button } from 'reactstrap';
+import { socialData } from '../data/social-info.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 const IndexPage = () => (
     <div>
-        {/* Custom Hero Section */}
-        <section className="hero mb-5">
+        <section id="intro" className="hero">
             <Header />
             <Container>
-                <Row>
-                    <Col className="col-12 col-sm-8 text-center mx-auto">
-                        <h3>The perfect 50/50 split</h3>
-
-                        <h1>Hi we are a team of</h1>
-                        <h2>
+                <Row className="text-center mx-auto">
+                    <Col>
+                        <h5>Hello, World</h5>
+                        <h1>
+                            <span>We Are </span>
                             <Typed
                                 strings={[
-                                    'Designers',
-                                    'Developers',
-                                    'Analysts',
+                                    ' EadsGraphic',
+                                    ' Designers',
+                                    ' Developers',
+                                    ' Analysts',
                                 ]}
                                 loop={true}
                                 loopCount={5}
                                 typeSpeed={40}
                             />
-                        </h2>
-
-                        <div className="hero">
-                            <Button
-                                className="hero_button--primary mr-3"
-                                color="primary"
-                            >
-                                Let's Talk
-                            </Button>
-                            <Button
-                                className="hero_button-link--primary"
-                                outline
-                                color="primary"
-                            >
-                                More About Us
-                            </Button>
-                        </div>
+                        </h1>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <ul className="list-unstyled">
+                            <li>
+                                <a href="#">
+                                Facebook
+                                    <i className="fab fa-facebook" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i className="fa fa-behance" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i className="fa fa-twitter" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i className="fab fa-dribbble" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i className="fa fa-instagram" />
+                                    <FontAwesomeIcon icon="stroopwafel" />
+                                </a>
+                            </li>
+                        </ul>
                     </Col>
                 </Row>
             </Container>
         </section>
+
         <Container>
             <Row>
                 <Col className="col-12 col-md-6">

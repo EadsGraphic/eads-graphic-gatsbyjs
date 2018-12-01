@@ -1,6 +1,4 @@
 .hero {
-    min-height: 100vh;
-    height: 100vh;
     position: relative;
     background-image: radial-gradient(
         circle,
@@ -9,10 +7,19 @@
         #fff 1px,
         #fff
     );
+    height: 100%;
     background-size: 28px 28px;
-    border-bottom: 1px solid #d7d7d7;
 }
 
+#intro h5 {
+    color: $brand-primary;;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    line-height: 1.5;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
 .section-description {
     text-align: center;
     color: $sm-title-color;
@@ -20,29 +27,4 @@
     max-width: 48rem;
     font-size: 0.875rem;
 }
-.hero_button--primary {
-    box-shadow: 0 4px 14px 0 rgba(0, 118, 255, 0.39);
-}
 
-.hero-title {
-    font-size: 3.5rem;
-}
-
-// Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-}

@@ -4,8 +4,12 @@
     "version": "1.0.0",
     "author": "Tyler Eads <tyler.eads9@gmail.com>",
     "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.8",
+        "@fortawesome/free-solid-svg-icons": "^5.5.0",
+        "@fortawesome/react-fontawesome": "^0.1.3",
         "bootstrap": "^4.1.3",
         "gatsby": "^1.9.277",
+        "gatsby-cli": "^2.4.6",
         "gatsby-link": "^1.6.46",
         "gatsby-plugin-manifest": "^1.0.27",
         "gatsby-plugin-offline": "^1.0.18",

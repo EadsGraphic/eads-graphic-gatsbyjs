@@ -26,7 +26,7 @@ This project is aimed at exploring the new GatsbyJS framework for developing sta
 
    ```sh
    cd eads-graphic-gatsbyjs/
-   gatsby develop
+   yarn gatsby develop
    ```
 
 3. **Build for deployment**
@@ -34,5 +34,5 @@ This project is aimed at exploring the new GatsbyJS framework for developing sta
    Navigate into your new site’s directory and start it up.
 
    ```sh
-   gatsby build
+   yarn gatsby build
    ```
