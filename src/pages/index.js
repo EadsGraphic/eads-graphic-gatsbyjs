@@ -29,10 +29,13 @@ const IndexPage = () => (
                         </h1>
                     </Col>
                     <Col xs={12} className="mt-4">
-                        <Button className="hero-btn mr-2" color="primary">
+                        <Button
+                            className="btn-round hero-btn mr-2"
+                            color="primary"
+                        >
                             More Info
                         </Button>
-                        <Button outline color="primary">
+                        <Button outline color="primary" className="btn-round">
                             Contact Us
                         </Button>
                     </Col>
