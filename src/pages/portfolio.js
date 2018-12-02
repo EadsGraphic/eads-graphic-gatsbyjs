@@ -1,6 +1,5 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import HeaderAlt from '../components/headeralt';
 import { Container, Row, Col } from 'reactstrap';
 
 const PortfolioPage = () => (
@@ -15,7 +14,7 @@ const PortfolioPage = () => (
                 ]}
             />
 
-            <HeaderAlt />
+   
 
             <Row>
                 <Col className="col-6">

@@ -1,6 +1,5 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import HeaderAlt from '../components/headeralt';
 import { Container, Row, Col } from 'reactstrap';
 import CallToAction from '../components/call-to-action';
 
@@ -16,7 +15,7 @@ const ServicesPage = () => (
                         { name: 'keywords', content: 'About description' },
                     ]}
                 />
-                <HeaderAlt />
+
 
                 <Row>
                     <Col className="col-12 text-center">

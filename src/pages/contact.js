@@ -1,8 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import HeaderAlt from '../components/headeralt';
 import { Container, Row, Col } from 'reactstrap';
-import ContactFrom from '../components/contact-form';
+import ContactForm from '../components/contact-form';
 
 const ContactPage = () => (
     <Container>
@@ -15,15 +14,14 @@ const ContactPage = () => (
             ]}
         />
 
-        <HeaderAlt />
-
+    
         <Row>
             <Col className="col-6">
                 <h1>Contact</h1>
             </Col>
         </Row>
 
-        <ContactFrom />
+        <ContactForm />
     </Container>
 );
 

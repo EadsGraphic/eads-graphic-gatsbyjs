@@ -1,0 +1,33 @@
+.hero {
+    position: relative;
+    background-image: radial-gradient(circle, #d7d7d7, #d7d7d7 1px, #fff 1px, #fff);
+    height: 100vh;
+    background-size: 28px 28px;
+    border-bottom: #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #777;
+}
+
+#intro h5 {
+    color: $brand-primary;;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    line-height: 1.5;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.intro-social {
+    display: flex;
+    width: 100%;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.intro-social a {
+    color: #7b7b7b;
+}

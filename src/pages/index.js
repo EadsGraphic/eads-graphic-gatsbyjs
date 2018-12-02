@@ -1,23 +1,21 @@
 import React from 'react';
 import CallToAction from '../components/call-to-action';
-import Header from '../components/header';
+
 import Services from '../components/services';
 import Typed from 'react-typed';
 import { Container, Row, Col, Button } from 'reactstrap';
-import { socialData } from '../data/social-info.js';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import socialData from '../data/social-info.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const IndexPage = () => (
     <div>
         <section id="intro" className="hero">
-            <Header />
             <Container>
                 <Row className="text-center mx-auto">
-                    <Col>
+                    <Col xs={12}>
                         <h5>Hello, World</h5>
+                        <h1>We Are</h1>
                         <h1>
-                            <span>We Are </span>
                             <Typed
                                 strings={[
                                     ' EadsGraphic',
@@ -26,40 +24,51 @@ const IndexPage = () => (
                                     ' Analysts',
                                 ]}
                                 loop={true}
-                                loopCount={5}
                                 typeSpeed={40}
                             />
                         </h1>
                     </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <ul className="list-unstyled">
-                            <li>
-                                <a href="#">
-                                Facebook
-                                    <i className="fab fa-facebook" />
+                    <Col xs={12} className="mt-4">
+                        <Button className="hero-btn mr-2" color="primary">
+                            More Info
+                        </Button>
+                        <Button outline color="primary">
+                            Contact Us
+                        </Button>
+                    </Col>
+                    <Col xs={12}>
+                        <ul className="list-unstyled intro-social">
+                            <li className="p-3">
+                                <a id="be" href="#" alt="EadsGraphic Facebbok">
+                                    <i className="fab fa-behance" />
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <i className="fa fa-behance" />
+
+                            <li className="p-3">
+                                <a id="yt" href="#" alt="EadsGraphic Youtube">
+                                    <i className="fab fa-youtube" />
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <i className="fa fa-twitter" />
+
+                            <li className="p-3">
+                                <a id="ig" href="#" alt="EadsGraphic Instagram">
+                                    <i className="fab fa-instagram" />
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <i className="fab fa-dribbble" />
+
+                            <li className="p-3">
+                                <a id="gh" href="#" alt="EadsGraphic GitHub">
+                                    <i className="fab fa-github" />
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <i className="fa fa-instagram" />
-                                    <FontAwesomeIcon icon="stroopwafel" />
+
+                            <li className="p-3">
+                                <a
+                                    id="li"
+                                    href="#"
+                                    alt="EadsGraphic LinkedIn Profile"
+                                >
+                                    <i className="fab fa-linkedin" />
                                 </a>
                             </li>
                         </ul>
@@ -68,7 +77,7 @@ const IndexPage = () => (
             </Container>
         </section>
 
-        <Container>
+        <Container className="pt-5">
             <Row>
                 <Col className="col-12 col-md-6">
                     <h2>

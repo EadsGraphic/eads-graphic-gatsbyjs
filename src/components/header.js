@@ -34,56 +34,58 @@ class Header extends React.Component {
     }
     render() {
         return (
-            <Container>
-                <Navbar expand="sm">
-                    <NavbarBrand href="/">
-                        <img
-                            src={logo}
-                            alt={'EadsGraphic Logo'}
-                            className="logo"
-                        />
-                    </NavbarBrand>
-                    <NavbarToggler onClick={this.toggle} />
-                    <Collapse isOpen={this.state.isOpen} navbar>
-                        <Nav className="ml-auto" navbar>
-                            <NavItem>
-                                <Link className="nav-link" to="/about">
-                                    About
-                                </Link>
-                            </NavItem>
-                            <NavItem>
-                                <Link className="nav-link" to="/services">
-                                    Services
-                                </Link>
-                            </NavItem>
-                            <NavItem>
-                                <Link className="nav-link" to="/portfolio">
-                                    Portfolio
-                                </Link>
-                            </NavItem>
-                            <NavItem>
-                                <Link className="nav-link" to="/contact">
-                                    Contact
-                                </Link>
-                            </NavItem>
-                            <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle nav caret>
-                                    Social
-                                </DropdownToggle>
-                                <DropdownMenu right>
-                                    <DropdownItem>Instagram</DropdownItem>
-                                    <DropdownItem>Dribbble</DropdownItem>
-                                    <DropdownItem>LinkedIn</DropdownItem>
-                                    <DropdownItem>Facebook</DropdownItem>
-                                    <DropdownItem>YouTube</DropdownItem>
-                                    <DropdownItem divider />
-                                    <DropdownItem>Email</DropdownItem>
-                                </DropdownMenu>
-                            </UncontrolledDropdown>
-                        </Nav>
-                    </Collapse>
-                </Navbar>
-            </Container>
+            <header>
+                <Container>
+                    <Navbar className="eg-navbar" expand="sm">
+                        <NavbarBrand href="/">
+                            <img
+                                src={logo}
+                                alt={'EadsGraphic Logo'}
+                                className="logo"
+                            />
+                        </NavbarBrand>
+                        <NavbarToggler onClick={this.toggle} />
+                        <Collapse isOpen={this.state.isOpen} navbar>
+                            <Nav className="ml-auto" navbar>
+                                <NavItem>
+                                    <Link className="nav-link" to="/about">
+                                        About
+                                    </Link>
+                                </NavItem>
+                                <NavItem>
+                                    <Link className="nav-link" to="/services">
+                                        Services
+                                    </Link>
+                                </NavItem>
+                                <NavItem>
+                                    <Link className="nav-link" to="/portfolio">
+                                        Portfolio
+                                    </Link>
+                                </NavItem>
+                                <NavItem>
+                                    <Link className="nav-link" to="/contact">
+                                        Contact
+                                    </Link>
+                                </NavItem>
+                                <UncontrolledDropdown nav inNavbar>
+                                    <DropdownToggle nav caret>
+                                        Social
+                                    </DropdownToggle>
+                                    <DropdownMenu right>
+                                        <DropdownItem>Instagram</DropdownItem>
+                                        <DropdownItem>Dribbble</DropdownItem>
+                                        <DropdownItem>LinkedIn</DropdownItem>
+                                        <DropdownItem>Facebook</DropdownItem>
+                                        <DropdownItem>YouTube</DropdownItem>
+                                        <DropdownItem divider />
+                                        <DropdownItem>Email</DropdownItem>
+                                    </DropdownMenu>
+                                </UncontrolledDropdown>
+                            </Nav>
+                        </Collapse>
+                    </Navbar>
+                </Container>
+            </header>
         );
     }
 }
