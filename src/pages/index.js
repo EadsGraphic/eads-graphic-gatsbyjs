@@ -58,23 +58,49 @@ const IndexPage = () => (
                                     <i className="fab fa-instagram" />
                                 </a>
                             </li>
-
+                            <li className="p-3">
+                                <a
+                                    id="db"
+                                    href="#"
+                                    alt="EadsGraphic Dribbble Profile"
+                                >
+                                    <i className="fab fa-dribbble" />
+                                </a>
+                            </li>
                             <li className="p-3">
                                 <a id="gh" href="#" alt="EadsGraphic GitHub">
                                     <i className="fab fa-github" />
                                 </a>
                             </li>
-
-                            <li className="p-3">
-                                <a
-                                    id="li"
-                                    href="#"
-                                    alt="EadsGraphic LinkedIn Profile"
-                                >
-                                    <i className="fab fa-linkedin" />
-                                </a>
-                            </li>
                         </ul>
+                    </Col>
+                </Row>
+            </Container>
+        </section>
+
+        <section id="about" className="py-5">
+            <Container>
+                <Row className="section-intro text-center">
+                    <Col>
+                        <h5>About</h5>
+                        <h1>Let us introduce ourselves.</h1>
+
+                        <div class="intro-info">
+                            <p>
+                                Lorem ipsum Exercitation culpa qui dolor
+                                consequat exercitation fugiat laborum ex ea
+                                eiusmod ad do aliqua occaecat nisi ad irure sunt
+                                id pariatur Duis laboris amet exercitation
+                                veniam labore consectetur ea id quis eiusmod.
+                            </p>
+                        </div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                    <Button color="primary" outline className="btn-round">
+                        More About
+                    </Button>
                     </Col>
                 </Row>
             </Container>

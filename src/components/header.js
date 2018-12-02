@@ -36,7 +36,7 @@ class Header extends React.Component {
         return (
             <header>
                 <Container>
-                    <Navbar className="eg-navbar" expand="sm">
+                    <Navbar className="eg-navbar" light expand="sm">
                         <NavbarBrand href="/">
                             <img
                                 src={logo}
